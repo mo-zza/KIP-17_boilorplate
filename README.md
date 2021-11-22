@@ -1,1 +1,0 @@
-# KIP-17_boilorplate

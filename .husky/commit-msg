@@ -1,0 +1,4 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+if git-branch-is dev; then commitlint -E HUSKY_GIT_PARAMS; fi
