@@ -9,7 +9,6 @@ module.exports = {
     },
     plugins: ["@typescript-eslint/eslint-plugin"],
     extends: [
-        "airbnb-typescript",
         "plugin:@typescript-eslint/recommended",
         "prettier",
         "plugin:prettier/recommended"
@@ -18,7 +17,10 @@ module.exports = {
     rules: {
         "react/jsx-filename-extension": [0],
         "import/extensions": "off",
-        "import/no-extraneous-dependencies": "off"
+        "import/no-extraneous-dependencies": "off",
+        "@typescript-eslint/no-var-requires": "off",
+        "@typescript-eslint/no-unused-vars": "off",
+        "@typescript-eslint/ban-types": "warn"
     },
     settings: {
         "import/resolver": {
